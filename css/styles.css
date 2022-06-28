@@ -1,0 +1,178 @@
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272727;
+    color: #fff;
+}
+
+header {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    transition: text-shadow 0.3s ease;
+    font-size: 2rem;
+    color: #ff9900;
+    text-align: center;
+    margin: 0.5rem 0;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.title:hover{
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* NAV */
+
+.nav-menu {
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-header ul li a {
+    transition: all 0.2s ease;
+}
+
+.nav-header ul li a:hover {
+    padding: 0 0.5rem;
+    color: #989898;
+    border-left: 0.15rem solid #989898;
+    border-right: 0.15rem solid #989898;
+    text-shadow: 1px 1px 0px #000;
+    font-weight: 600;
+}
+
+/* --- MAIN --- */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin: 0.5rem 0;
+}
+
+/* --- NOTICES --- */
+
+.section-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section article {
+    transition: all 0.3s ease;
+    background-color: #181818;
+    width: 90vw;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+section article:hover {
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+section article h3 {
+    font-size: 1.2rem;
+}
+
+section article img {
+    width: 90vw;
+}
+
+section article h3, section article p {
+    margin: 0.5rem;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    background-color: #101010;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+footer p, footer a {
+    margin: 0 0.5rem;
+}
+
+@media (min-width: 820px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-header {
+        width: 50%;
+        padding-top: 10px;
+    }
+
+    .section-main {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400px 400px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    section article, section article img {
+        width: 400px;
+    }
+
+}
+
+@media (min-width: 1220px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-left: 2rem;
+        text-align: start;
+    }
+
+    .nav-header {
+        width: 30%;
+    }
+
+    .section-main {
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 400px 400px;
+    }
+
+}
