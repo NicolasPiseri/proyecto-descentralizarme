@@ -1,3 +1,5 @@
+/* ---------- ALL ---------- */
+
 html {
     font-family: 'Nunito', sans-serif;
 }
@@ -12,6 +14,8 @@ body {
     background-color: #272727;
     color: #fff;
 }
+
+/* ----- HEADER ----- */
 
 header {
     background-color: #181818;
@@ -34,6 +38,8 @@ header {
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
+/* --- NAV H --- */
+
 ul {
     list-style: none;
 }
@@ -42,8 +48,6 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-/* NAV */
 
 .nav-menu {
     margin: 0.5rem 0;
@@ -66,7 +70,7 @@ a {
     font-weight: 600;
 }
 
-/* --- MAIN --- */
+/* ----- MAIN ----- */
 
 main {
     display: flex;
@@ -79,7 +83,7 @@ main {
     margin: 0.5rem 0;
 }
 
-/* --- NOTICES --- */
+/* --- SECTION M --- */
 
 .section-main {
     display: flex;
@@ -115,7 +119,7 @@ section article h3, section article p {
     margin: 0.5rem;
 }
 
-/* --- FOOTER --- */
+/* ----- FOOTER ----- */
 
 footer {
     background-color: #101010;
@@ -129,8 +133,12 @@ footer p, footer a {
     margin: 0 0.5rem;
 }
 
+/* ----- ALL MEDIA ----- */
+
+/* --- MEDIA I (0px -> 820px) --- */
 @media (min-width: 820px) {
 
+    /* M I HEADER --- */
     header {
         flex-direction: row;
         justify-content: space-around;
@@ -141,6 +149,7 @@ footer p, footer a {
         padding-top: 10px;
     }
 
+    /* M I SECTION --- */
     .section-main {
         display: grid;
         grid-template-columns: 400px 400px;
@@ -155,8 +164,10 @@ footer p, footer a {
 
 }
 
+/* --- MEDIA II (820px -> 1220px) --- */
 @media (min-width: 1220px) {
 
+    /* M II HEADER --- */
     header {
         justify-content: space-between;
     }
@@ -170,9 +181,12 @@ footer p, footer a {
         width: 30%;
     }
 
+    /* M II SECTION --- */
     .section-main {
         grid-template-columns: 400px 400px 400px;
         grid-template-rows: 400px 400px;
     }
 
 }
+
+/* ---------- END ---------- */
