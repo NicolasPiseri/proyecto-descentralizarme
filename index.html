@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
     <!--- CSS --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Descentralizarme</title>
 </head>
@@ -34,47 +35,53 @@
                 </ul>
             </nav>
     </header>
-    <!----- Main ----->
-    <main class="container">
-        <h2 class="subtitle">Ultimos Articulos</h2>
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+        <h2 class="col-12 subtitle">Ultimos Articulos</h2>
+        </div>
         <!--- Section Main --->
-        <section class="section-main">
-            <article>
+        <div>
+        <section class="row justify-content-center">
+            <article class="col-10">
                 <h3>¿Qué es Lemon Cash?</h3>
                 <img src="img/lemoncash.jpg" alt="Lemon Cash Exchange">
-                <p>Lemon Cash es una <b>billetera virtual Argentina</b> que nos permite operar tanto en pesos Argentinos como en <b>criptomonedas</b>... (Leer Más)</p>
+                <p>Lemon Cash es una billetera virtual Argentina que nos permite operar tanto en pesos Argentinos como en criptomonedas... (Leer Más)</p>
             </article>
-            <article>
+            <article class="col-10">
                 <h3>¿Qué es Bitcoin?</h3>
                 <img src="img/bitcoin.jpg" alt="Bitcoin Criptomoneda">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</b></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</p>
             </article>
-            <article>
+            <article class="col-10">
                 <h3>¿Qué es Binance?</h3>
                 <img src="img/binance.jpg" alt="Lemon Cash Exchange">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</b></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</p>
             </article>
-            <article>
+            <article class="col-10">
                 <h3>¿Qué es un exchange?</h3>
                 <img src="img/cex.jpg" alt="Bitcoin Criptomoneda">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</b></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</p>
             </article>
-            <article>
+            <article class="col-10">
                 <h3>¿Qué es una wallet?</h3>
                 <img src="img/wallets.jpg" alt="Lemon Cash Exchange">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</b></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</p>
             </article>
-            <article>
+            <article class="col-10">
                 <h3>Hot Wallet vs Cold Wallet</h3>
                 <img src="img/hotvscoldwallet.jpg" alt="Bitcoin Criptomoneda">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</b></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus amet distinctio magnam iusto quasi obcaecati enim voluptatum consequatur illum!</p>
             </article>
         </section>
+        </div>
     </main>
     <!----- Footer ----->
-    <footer>
-        <a href="./pages/contacto.html">Contacto</a>
-        <p>Copyright 2022</p>
+    <footer class="container-fluid">
+        <div class="row justify-content-end">
+        <a class="col-2" href="./pages/contacto.html">Contacto</a>
+        <p class="col-4">Copyright 2022</p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
